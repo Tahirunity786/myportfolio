@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <a href="./Media/data/CV.pdf" target="_blank" download="true">Download CV</a> -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon" >
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Web Art</title>
 </head>
 
@@ -25,29 +28,28 @@
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-
-        </nav>
+       
+    </nav>
+    <div class="icon">
+        <i class="fa fa-navicon"></i>
+    </div>
     </header>
-    <main>
-        <div class="over-cls-content">
-            <div class="content">
-                <h2>I'm a Web Designer</h2>
-                <p>My name is Tahir Zaman. I'm a Web Developer. I'm exprt web Developer. I have completed more than 50 projects. I'm currently studding as a Software Enginner. If you choose me your's Web Developer, I'll provide my best.  </p>
-                <div class="btn">
-                    <button id="mmi-btn-secure-1">Learn More</button><a href="CV.pdf" download="CV"
-                        target="_blank"><button id="mmi-btn-secure-2">Download CV</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="image-over-cls">
-            <div class="image">
-                <img src="ali-morshedlou-WMD64tMfc4k-unsplash__1_-removebg-preview.png" alt="Image">
-            </div>
-        </div>
-    </main>
-    <br>
-    <br>
-    <br>
+    <div class="container-2">
+<div class="content">
+    <h1>I'm <span class="auto-input"></span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum quos consequuntur iusto illum molestias, libero fugiat labore, qui repudiandae sequi? Magnam in cumque at saepe vitae repellendus ad a dolorum, aspernatur obcaecati velit eum temporibus error.</p>
+    <div class="btn-cls">
+        <button>Learn More</button><a href="#"><button id="mmi-save-btn-id">Download CV</button></a>
+    </div>
+</div>
+<div class="image">
+    <img src="young-successful-businessman-correcting-tie.jpg" alt="">
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input",{strings: ["Tahir Zaman","Web Developer","UI Designer"], typeSpeed:100,backSpeed:100,loop:true})
+    </script>
 </body>
 
 </html>
