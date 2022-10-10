@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid rgba(109, 108, 108, 0.801);
+    /* background-color: rgba(97, 95, 95, 0.733); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    color: black;
+    border: none;
+font-size: 12px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul li a::after {
+    content: ' ';
+    height: 4px;
+    display: block;
+    width: 0;
+    background: hotpink;
+    transition: all .3s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.over-cls-content {
+    width: 670px;
+
+}
+
+.over-cls-content,
+.content {
+    width: 500px;
+}
+
+.image-over-cls {
+    width: 500px;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 350px;
+}
+
+.btn button {
+    padding: 12px 22px;
+    outline: none;
+    margin-top: 30px;
+    border: none;
+    /* background-color: blueviolet; */
+}
+
+#mmi-btn-secure-1 {
+    border: 6px solid blueviolet;
+    border-radius: 20px;
+    background-color: none;
+    padding: 6px 22px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#mmi-btn-secure-1:hover{
+    background-color: blueviolet;
+    border: 6px solid rgba(139, 131, 131, 0.644);
+}
+#mmi-btn-secure-2 {
+    background-color: blueviolet;
+    margin-left: 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .3s ease-in-out;
+}
+#mmi-btn-secure-2:hover {
+background-color: rgb(163, 104, 218);
+}
