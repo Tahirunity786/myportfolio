@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color-lb: #242B2E;
+            --primary-color-llb: #758283;
+            --primary-color-r: #B4161B;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /*Header design*/
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            justify-items: center;
+            align-items: center;
+            background-color: aliceblue;
+            width: 100%;
+            height: 80px;
+
+        }
+
+        .navbar {
+            display: block;
+            width: 30%;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            display: block;
+            color: rgb(54, 53, 53);
+            transition: all .3s;
+            font-weight: 600;
+            font-size: 0.8rem;
+
+        }
+
+        /* .navbar ul li a::after{
+            content: ' ';
+            display:inline-block ;
+            width: 0px;
+            background: blueviolet;
+            height: 4.5px;
+            transition: all .3.5s;
+
+          }*/
+        .navbar ul li a:hover {
+            color: hotpink;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            width: 210px;
+
+
+        }
+
+        .image-logo {
+            flex-shrink: 2;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            text-align: center;
+            padding: 15px;
+        }
+
+        main {
+            width: 100%;
+            margin-top: 20px;
+            height: calc(700px - 80px);
+            background: var(--primary-color-llb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            width: 50%;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            color: var(--primary-color-lb);
+            letter-spacing: 1.5px;
+        }
+
+        .container p {
+            margin-top: 20px;
+            font-size: 0.998rem;
+            color: white;
+        }
+
+        .container button {
+            margin-top: 40px;
+            padding: 13px 32px;
+            outline: none;
+            border: none;
+            background-color: blueviolet;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 0.75rem;
+            transition: all .3s ease-out;
+            cursor: pointer;
+
+        }
+
+        .container button:hover {
+            background-color: rgb(160, 99, 218);
+        }
+
+        .lower-bannar{
+            width: 100%;
+            height: 200px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+
+            background-color: var(--primary-color-llb);
+            margin-top: 50px;
+        }
+
+        .header-cont {
+            width: 80%;
+            height: 80px;
+            background-color: white;
+            display: block;
+            padding: auto;
+        }
+
+        .about {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .contenter {
+            margin-top: 15px;
+            display: block;
+            width: 90%;
+        }
+
+        .contenter p {
+            font-size: 0.9em;
+        }
+        .about-logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+
+        }
+        
+        .about-logo img{
+            border-radius: 50%;
+            width: 100%;
+            animation: Tahir1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Tahir1 {
+            20%{
+                box-shadow:  0 0 15px white;
+            }
+            100%{
+                box-shadow:  0 0 20px blueviolet;
+
+            }
+        }
+    </style>
+    <title>PORTFOLIO</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="image-logo">
+                <h2>T</h2>
+            </div>
+            <h2>Tahir Zaman</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">SERIVCES</a>
+                </li>
+                <li>
+                    <a href="#">BLOGS</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="heading">
+                <h1>WELCOME</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi nostrum hic aliquam maiores
+                    numquam laudantium necessitatibus eveniet aperiam voluptate doloremque illo totam cumque tempore,
+                    sunt perferendis ipsam rem, ex eligendi, corporis cum eos officiis.</p>
+                <div class="btn">
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="lower-bannar">
+        <div class="about">
+            <div class="about-logo header-cont">
+                <div class="image">
+                    <img src="./my-image.jpg" alt="IMAGE">
+                </div>
+            </div>
+            <div class="contenter">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cumque nobis iste, dignissimos,
+                    nulla cum voluptate esse eaque laboriosam praesentium ab! Unde at, rem modi esse earum vero
+                    distinctio hic.</p>
+            </div>
+        </div>
+    </section>
+    <section class="lower-about">
+        <div class="services-manager">
+            
+        </div>
+    </section>
+    <br>
+</body>
+
+</html>
