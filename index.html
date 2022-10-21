@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- STYLE LINKAGE -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./languages/style.css">
     <!-- Favicon linkage -->
-    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/android-chrome-512x512.png" type="image/x-icon">
+    <!-- font package -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- This is Animatioin package -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>PORTFOLIO</title>
 </head>
 
@@ -37,28 +41,33 @@
                 <li>
                     <a href="#">CONTACT</a>
                 </li>
+
             </ul>
+
         </nav>
+
     </header>
     <main>
-        <div class="container">
+        <div class="container"">
 
-            <div class="heading">
-                <h1>WELCOME</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi nostrum hic aliquam maiores
-                    numquam laudantium necessitatibus eveniet aperiam voluptate doloremque illo totam cumque tempore,
-                    sunt perferendis ipsam rem, ex eligendi, corporis cum eos officiis.</p>
-                <div class="btn">
-                    <button>LEARN MORE</button>
-                </div>
+            <div class=" heading" data-aos="fade-up">
+            <h1>WELCOME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi nostrum hic aliquam maiores
+                numquam laudantium necessitatibus eveniet aperiam voluptate doloremque illo totam cumque tempore,
+                sunt perferendis ipsam rem, ex eligendi, corporis cum eos officiis.</p>
+            <div class="btn" data-aos="fade-up">
+                <button>LEARN MORE</button>
             </div>
+        </div>
         </div>
     </main>
     <section class="lower-bannar">
         <div class="about">
-            <div class="about-heading">
-           <h1>ABOUT</h1>
-        </div>
+            <div class="about-logo header-cont" data-aos="flip-up" data-aos-offset="180" data-aos-duration="600">
+                <div class="image">
+                    <img src="./media/my-image.jpg" alt="IMAGE">
+                </div>
+            </div>
             <div class="contenter">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cumque nobis iste, dignissimos,
                     nulla cum voluptate esse eaque laboriosam praesentium ab! Unde at, rem modi esse earum vero
@@ -80,7 +89,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="btn-1">
-                    <a href="#"><button>Explore Me</button></a>
+                    <a href="#"><button id="ser-btn">Explore Me</button></a>
                 </div>
             </div>
             <div class="item0" id="item2">
@@ -92,7 +101,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="btn-1">
-                    <a href="#"><button>Explore Me</button></a>
+                    <a href="#"><button id="ser-btn">Explore Me</button></a>
                 </div>
             </div>
             <div class="item0" id="item3">
@@ -104,7 +113,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="btn-1">
-                    <a href="#"><button>Explore Me</button></a>
+                    <a href="#"><button id="ser-btn">Explore Me</button></a>
                 </div>
             </div>
             <div class="item0" id="item3">
@@ -116,36 +125,51 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="btn-1">
-                    <a href="#"><button>Explore Me</button></a>
+                    <a href="#"><button id="ser-btn">Explore Me</button></a>
                 </div>
             </div>
         </div>
-
+        
     </section>
-    <section class="lower-services form">
-        <div class="header-Contact">
+    <section class="blog">
+        <div class="heading">
+            <h1>MY BLOG</h1>
+        </div>
+        <div class="blog-manager">
+            <div class="item" id="item1"></div>
+            <div class="item" id="item2"></div>
+            <div class="item" id="item3"></div>
+            <div class="item" id="item4"></div>
+            <div class="item" id="item5"></div>
+            <div class="item" id="item6"></div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-heading">
             <h1>CONTACT</h1>
         </div>
-<div class="form-controler">
-    <div class="form">
-        <div class="input">
-        <label for="mmi-txt" class="label-same-cls-1">Name: </label>
-        <input type="text" id="mmi-txt">
-        
-        <div class="input input1">
-        <label for="mmi-email" class="label-same-cls">Email: </label>
-        <input type="email" id="mmi-email" required>
-    </div>
-    <div class="input">
-        <input type="submit" value="SUMBIT">
-    </div>
-    </div>
-</div>
+        <div class="contact-aligner">
+            <div class="input-1 input">
+                <div class="input1">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input2 input">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="btn-contact"><br>
+                    <input type="button" value="Submit">
+                </div>
+            </div>
+        </div>
     </section>
-    <br>
-    <footer>
-     <p>&#169; <em>2022</em> <strong>Tahir Zaman</strong></p>
-    </footer>
+    <!-- JS zone area -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./languages/brain.js"></script>
+
+
 </body>
 
 </html>
